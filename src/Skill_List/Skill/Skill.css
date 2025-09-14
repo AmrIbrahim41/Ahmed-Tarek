@@ -1,0 +1,22 @@
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 120px; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.skill-icon {
+    width: 80px;   /* Set a fixed width */
+    height: 80px;  /* Set a fixed height to make it square */
+    object-fit: contain; /* Ensures the entire image is visible without cropping */
+    margin-bottom: 10px;
+    border-radius: 15px; /* Optional: Slightly rounded corners */
+    padding: 10px; /* Optional: Space inside the square */
+}
+
+.skill-name {
+    font-size: 14px;
+    color: #e0e0e0;
+}

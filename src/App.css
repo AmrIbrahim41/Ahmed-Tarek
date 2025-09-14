@@ -1,0 +1,19 @@
+:root {
+    --Background-color: #111;
+    --Second-Background-color: #1c1c1c;
+    --facebook-color: #0008ff;
+    --messenger-color: #00B2FF;
+    --instagram-color: #fc0d89;
+    --linkedin-color: #0060c0;
+    --twitter-color: #1DA1EE;
+    --whatsapp-color: #25D366;
+    --Normal-Text-color: #e0e0e0;
+    --main-color: #f27405;
+    --Main-gradient: linear-gradient(to right, #f27405, #ffae47);
+    /* --Main-gradient: linear-gradient(to right, #DD2476, #42047E); */
+    /* --Main-gradient: linear-gradient(to right, #F47920, #6A1B9A); */
+    /* --Main-gradient: linear-gradient(to right, #FEE140, #FA709A); */
+    /* --text-gradient: linear-gradient(to right, #F47920, #6A1B9A); */
+    --text-gradient: #f27405;
+    /* --text-gradient: linear-gradient(to right, #f9a826, #b89d58); */
+}

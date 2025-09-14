@@ -1,0 +1,46 @@
+.certifications-page {
+  background-color: var(--Background-color);
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.page-title {
+  text-align: center;
+  color: white;
+  width: 300px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--Second-Background-color);
+  border-radius: 20px;
+  /* Pill shape */
+  padding: 8px 18px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* To allow cards to wrap on smaller screens */
+  gap: 20px;
+  /* Space between cards */
+}
+
+
+
+
+
+.skills-badge {
+  display: inline-block;
+  background-color: rgba(244, 232, 232, 0.337);
+  border-radius: 20px;
+  /* Pill shape */
+  padding: 8px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}

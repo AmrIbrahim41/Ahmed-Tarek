@@ -1,0 +1,52 @@
+/* Main style for the service card */
+.service-card {
+    background-color: #1c1c1c;
+    /* Slightly lighter than the page background */
+    padding: 35px 30px;
+    /* Inner spacing */
+    border-radius: 15px;
+    /* Rounded corners */
+    text-align: left;
+    /* Align text to the left inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effect */
+}
+
+/* Hover effect: lift the card up and add a subtle glow */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(242, 116, 5, 0.1);
+}
+
+/* Styling the icon container */
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the card title */
+/* --- العنوان (h3) مع التدرج اللوني الصحيح --- */
+.service-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 15px;
+text-align: center;
+    background: var(--text-gradient);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Styling the card description text */
+.card-description {
+    font-size: 15px;
+    color: #a0a0a0;
+    /* Light gray for the text */
+    line-height: 1.6;
+    /* For better readability */
+    margin: 0;
+}

@@ -1,0 +1,37 @@
+
+/* The small "Skills" badge */
+.skills-badge {
+    display: inline-block;
+    background-color: rgba(244, 232, 232, 0.337);
+    border-radius: 20px;
+    /* Pill shape */
+    padding: 8px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* The intro paragraph */
+.skills-intro {
+    font-size: 18px;
+    color: #a0a0a0;
+    /* Lighter gray for subtitle */
+    max-width: 500px;
+    margin: 0 auto 60px auto;
+    /* Center the text and add space below */
+}
+
+/* The grid/flex container for all skill items */
+.skills-grid {
+    display: flex;
+    /* <-- أهم خاصية: تجعل العناصر داخلها مرنة وتصطف أفقيًا */
+    justify-content: center;
+    /* تجعل المهارات تتوسط الحاوية */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* <-- تسمح للعناصر بالنزول لسطر جديد إذا لم يكن هناك مساحة كافية */
+    gap: 40px 60px;
+    /* مسافة رأسية وأفقية بين كل مهارة والأخرى */
+
+    /* تأكد من عدم وجود خصائص أخرى هنا قد تتعارض، مثل width: 100% أو flex-direction: column */
+}

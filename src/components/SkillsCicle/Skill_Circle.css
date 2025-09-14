@@ -1,0 +1,54 @@
+/* This is the container for one skill (title, circle, percent) */
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+}
+
+/* The title above the circle */
+.skill-item h3 {
+   color: #eeeeee;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* The outer circle that has the progress gradient */
+.skill-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; 
+    display: grid; 
+    place-items: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-circle:hover {
+    transform: scale(1.05); 
+}
+
+/* The inner circle that creates the "donut" hole and holds the image */
+.circle-inner {
+    width: 100px; 
+    height: 100px;
+    background-color: #111; 
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+/* The logo image inside the circle */
+.circle-inner img {
+    width: 55%; /* Adjust size of the logo as needed */
+    height: 55%;
+    object-fit: contain; /* Ensures the logo fits well without stretching */
+}
+
+/* The percentage text below the circle */
+.skill-item .percent {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}

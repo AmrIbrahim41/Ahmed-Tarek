@@ -1,0 +1,50 @@
+/* Styling for the entire services section */
+.services-section {
+    padding: 80px 8%; /* Spacing around the section */
+    text-align: center;
+    background-color: #111111; /* Dark background */
+}
+
+.services-section h2 {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.services-section p {
+    font-size: 16px;
+    color: #a0a0a0; /* Light gray for the subtitle */
+    max-width: 600px; /* To keep the line length readable */
+    margin: 0 auto 60px auto; /* Center the paragraph and add space below */
+}
+
+/* The grid container for all the service cards */
+.services-grid {
+    display: grid;
+    /* Create 3 columns of equal width */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; /* Space between cards */
+}
+
+
+/* --- Responsive Design for Tablets and Mobiles --- */
+
+/* For screens smaller than 1024px (Tablets) */
+@media (max-width: 1024px) {
+    .services-grid {
+        /* Change to 2 columns */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For screens smaller than 768px (Mobiles) */
+@media (max-width: 768px) {
+    .services-grid {
+        /* Change to 1 column */
+        grid-template-columns: 1fr;
+    }
+    .services-section h2 {
+        font-size: 36px; /* Make title smaller on mobile */
+    }
+}

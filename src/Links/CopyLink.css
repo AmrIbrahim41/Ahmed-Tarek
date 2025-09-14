@@ -1,0 +1,35 @@
+/* Styling for the toast notification */
+.toast-notification {
+  position: fixed; /* تثبيت الرسالة على الشاشة */
+  bottom: 20px; /* تظهر في الأسفل */
+  left: 50%; /* في منتصف الشاشة أفقيًا */
+  transform: translateX(-50%); /* لتوسيطها بالضبط */
+  background-color: var(--main-color); /* لون أخضر للنجاح */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* للتأكد من أنها فوق كل العناصر الأخرى */
+  opacity: 0;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+/* Animation for the fade-in and fade-out effect */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    bottom: 0px;
+  }
+  20% {
+    opacity: 1;
+    bottom: 20px;
+  }
+  80% {
+    opacity: 1;
+    bottom: 20px;
+  }
+  100% {
+    opacity: 0;
+    bottom: 0px;
+  }
+}

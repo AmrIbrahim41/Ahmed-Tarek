@@ -1,0 +1,189 @@
+/* Main footer container */
+.footer {
+    background-color: #1a1919;
+    /* Dark background color */
+    color: #a0a0a0;
+    /* Light gray for text */
+    padding: 60px 8% 25px;
+    display: flex;
+    flex-direction: column;
+    /* Stack all items vertically */
+    align-items: center;
+    /* Center all items horizontally */
+    gap: 30px;
+    /* Space between each row */
+    text-align: center;
+}
+
+/* Logo styling */
+.footer-logo {
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    /* Using the same orange gradient from your theme */
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin-bottom: 10px;
+}
+
+/* Navigation links */
+.footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow links to wrap on small screens */
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px 40px;
+    /* Vertical and horizontal gap */
+}
+
+.footer-nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #f27405;
+    /* Orange on hover */
+}
+
+
+/* --- Social Icons --- */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1.5px solid #555;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.social-icons a i {
+    font-size: 18px;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+    border-color: transparent;
+}
+
+.social-icons a:hover i {
+    color: #ffffff;
+}
+
+.social-icons .facebook:hover {
+    background-color: var(--facebook-color);
+}
+
+.social-icons .messenger:hover {
+    background-color: var(--messenger-color);
+}
+
+.social-icons .instagram:hover {
+    background-color: var(--instagram-color);
+}
+
+.social-icons .linkedin:hover {
+    background-color: var(--linkedin-color);
+}
+
+.social-icons .twitter:hover {
+    background-color: var(--twitter-color);
+}
+
+/* Contact information */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap on small screens */
+    justify-content: center;
+    gap: 20px 40px;
+    /* Vertical and horizontal gap */
+}
+
+.contact-info p {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Space between icon and text */
+    margin: 0;
+    color: #e0e0e0;
+}
+
+.Email-icon {
+    color: #34a853;
+    transition: color 0.3s ease;
+
+}
+
+.contact-info p {
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+}
+
+.contact-info p:hover {
+    color: #f27405;
+}
+
+.Phone-icon {
+    color: #cf466f;
+}
+
+.phone-number a {
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+}
+
+.phone-number a:hover {
+    color: #f27405;
+}
+
+
+/* Separator line */
+.footer-separator {
+    width: 80%;
+    max-width: 400px;
+    height: 1px;
+    background-color: #333;
+    margin: 10px 0;
+}
+
+/* Credit text at the bottom */
+.footer-credit {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+
+.contact-link {
+  color: inherit; /* يجعل لون الخط نفس لون العنصر الأب (الـ <p> في هذه الحالة) */
+  text-decoration: none; /* يزيل الخط الموجود تحت الرابط */
+  cursor: pointer; /* يغير شكل مؤشر الفأرة ليؤكد أنه قابل للنقر */
+}
+
+/* يمكنك إضافة تأثير بسيط عند مرور الفأرة فوق الرابط */
+.contact-link:hover {
+  opacity: 0.8; /* أو أي تأثير آخر تفضله */
+}

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    background-color: var(--Background-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: transparent;
+    position: relative;
+    /* Added for positioning the mobile menu */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    background: var(--Main-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: var(--Normal-Text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transform: translateY(-2px);
+}
+
+.hire-me-btn {
+    background: var(--Main-gradient);
+    color: #111;
+    font-weight: 600;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.4);
+}
+
+.hire-me-btn:hover {
+    background: var(--Main-gradient);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 140, 0, 0.6);
+}
+
+/* --- بداية كود الموبايل --- */
+
+.menu-icon {
+    display: none;
+    /* إخفاء الأيقونة في الشاشات الكبيرة */
+    font-size: 28px;
+    cursor: pointer;
+    color: #eee;
+    z-index: 1001;
+    /* To make sure it's clickable */
+}
+
+@media (max-width: 992px) {
+    .nav-links {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 13px;
+        right: 8%;
+        z-index: 1001;
+        cursor: pointer;
+        font-size: 28px;
+        color: var(--Normal-Text-color);
+    }
+
+    .hire-me-btn {
+        display: none;
+        /* إخفاء زر "Hire Me" */
+    }
+
+    .nav-links {
+        position: fixed;
+        /* Changed to fixed to cover the whole screen */
+        top: 0;
+        right: -100%;
+        /* إخفاء القائمة خارج الشاشة مبدئياً */
+        width: 100%;
+        height: 100vh;
+        background-color: #1a1a1a;
+        flex-direction: column;
+        /* ترتيب الروابط بشكل عمودي */
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        transition: right 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    /* هذا الكلاس سيُضاف عبر React لإظهار القائمة */
+    .nav-links.active {
+        right: 0;
+        /* إظهار القائمة */
+    }
+}

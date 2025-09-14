@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.cert-card {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--Second-Background-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  max-width: 320px;
+  text-align: center;
+  position: relative;
+  margin: 16px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: var( --Normal-Text-color);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.close-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.cert-badge img {
+  width: 180px;
+  height: 100px;
+  margin-bottom: 12px;
+}
+
+.cert-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--Normal-Text-color);
+  margin: 0;
+}
+
+.cert-status {
+  display: inline-block;
+  background-color: #fff8e1;
+  color: #f59e0b;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-top: 8px;
+}
+
+.cert-details {
+  margin-top: 24px;
+}
+
+.detail-item {
+  margin-bottom: 10px;
+}
+
+.detail-label {
+  font-size: 13px;
+  color:var(--Normal-Text-color);
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.detail-value {
+  font-size: 15px;
+  color: var(--Normal-Text-color);
+  margin: 0;
+}
+
+.progress-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px auto 0;
+  position: relative;
+}
+
+.progress-circle::before {
+  content: '';
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.progress-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #555;
+  z-index: 1; /* To appear above the white center */
+}
