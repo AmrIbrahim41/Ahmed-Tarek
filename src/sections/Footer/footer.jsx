@@ -25,15 +25,11 @@ const Footer = () => {
 
             <div className="social-icons">
                 {socialLinks.map((Social) => (
-                    <a
-                        key={Social.id}
-                        href={Social.url}
-                        className={Social.className}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <i className={Social.icon}></i>
-                    </a>
+                        Social.icon && (
+                            <a key={Social.id} href={Social.url} className={Social.className} target="_blank" rel="noopener noreferrer">
+                                <i className={Social.icon}></i>
+                            </a>
+                        )
                 ))}
             </div>
 

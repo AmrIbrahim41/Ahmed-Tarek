@@ -35,12 +35,10 @@ export const socialLinks = [
     id: 5,
     className: ' 01023423631',
     url: 'tel:01023423631',
-    icon: 'fa-solid fa-phone'
   },
   {
     id: 6,
     className: ' : Ahmedshahawy198@gmail.com',
     url: 'mailto:Ahmedshahawy198@gmail.com',
-    icon: 'fa-solid fa-envelope'
   }
 ];
